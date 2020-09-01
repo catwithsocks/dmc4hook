@@ -1,0 +1,22 @@
+@import "../imports";
+@import "./FeaturesItem.scss";
+
+#features-section {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: auto;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .features-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,31 @@
+@import "../imports";
+
+a {
+  margin: 1rem;
+  .download-latest-release-btn {
+    cursor: pointer;
+    padding: 0.8rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 2em;
+    background: color(blue-primary);
+    transition: 0.2s ease-in;
+    .download-btn-wrapper {
+      color: color(font);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+      transition: 0.2s ease-in;
+    }
+    &:hover,
+    &.active {
+      background: color(font);
+      transition: 0.2s ease-in;
+      .download-btn-wrapper {
+        color: color(blue-primary);
+        transition: 0.2s ease-in;
+      }
+    }
+  }
+}

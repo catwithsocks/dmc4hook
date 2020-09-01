@@ -1,0 +1,72 @@
+@import "../imports";
+@import "./BenefitItem.scss";
+
+#benefit-section {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: auto;
+
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+
+  @include responsive_mobile() {
+    box-sizing: initial;
+  }
+
+  @include responsive_tablet() {
+    box-sizing: initial;
+  }
+  @include responsive_tablet_portrait() {
+    flex-direction: column;
+    box-sizing: initial;
+  }
+
+  @include responsive_desktop() {
+    flex-direction: column;
+  }
+  @include responsive_desktop_large() {
+    flex-direction: column;
+  }
+
+  #benefit-title {
+    display: flex;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .benefit-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /*   @include responsive_desktop() {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    } */
+
+    .row {
+      display: flex;
+      justify-content: space-around;
+
+      @include responsive_mobile() {
+        display: block;
+      }
+
+      @include responsive_tablet() {
+        display: block;
+      }
+      .col {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+}

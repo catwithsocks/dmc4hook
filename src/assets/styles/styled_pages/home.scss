@@ -1,0 +1,24 @@
+@import "../_imports.scss";
+
+.home-container {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  section {
+    @include page_content;
+    height: calc(100vh - 10em);
+
+    &:nth-of-type(1) {
+      @include hero_background();
+      color: color(font);
+    }
+    &:nth-of-type(2) {
+      background: color(background-secondary-gradient);
+    }
+    &:nth-of-type(3) {
+      background: color(white);
+    }
+  }
+}

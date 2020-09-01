@@ -1,0 +1,24 @@
+@import "./assets/styles/_imports.scss";
+
+@import "./assets/styles/styled_pages/home.scss";
+@import "./assets/styles/styled_components/ToggleButton.scss";
+@import "./assets/styles/styled_components/Sidedrawer.scss";
+@import "./assets/styles/styled_components/Navigation.scss";
+@import "./assets/styles/styled_components/DownloadButton.scss";
+@import "./assets/styles/styled_components/HeroSection.scss";
+@import "./assets/styles/styled_components/BenefitSection.scss";
+@import "./assets/styles/styled_components/FeaturesSection.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  body {
+    margin: 0;
+    position: relative;
+  }
+}

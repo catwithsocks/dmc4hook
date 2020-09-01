@@ -1,0 +1,64 @@
+@import "../imports";
+
+.toggle-button,
+.toggle-button-active {
+  display: flex;
+  position: absolute;
+  outline: none;
+  flex-wrap: wrap-reverse;
+  right: 1rem;
+  top: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 2rem;
+  width: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 200;
+  mix-blend-mode: difference;
+  filter: invert(5%);
+
+  .toggle-button_line {
+    width: 30px;
+    height: 3px;
+    transition: 0.3s ease-in-out;
+    background: color(blue-primary);
+
+    /* box-shadow: 1px 0px 10px 0.5px rgba(0, 0, 0, 0.75); */
+
+    &:nth-of-type(2) {
+      width: 37px;
+      opacity: 1;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+
+.toggle-button-active {
+  .toggle-button_line {
+    background: color(font);
+
+    &:nth-child(2) {
+      opacity: 0;
+      /* visibility: none; */
+      transition: 0.3s ease-in-out;
+    }
+
+    &:nth-child(1) {
+      transform: rotate(-45deg) translate(-10px, 10px);
+      transition: 0.3s ease-in-out;
+    }
+
+    &:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -5px);
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+
+.toggle-button:focus {
+  outline: none;
+}

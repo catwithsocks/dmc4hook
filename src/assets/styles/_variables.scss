@@ -1,0 +1,17 @@
+$colors: (
+  font: rgba(255, 255, 252, 1),
+  background: rgb(10, 10, 10),
+  nav-bg-primary: rgba(21, 21, 21, 0.96),
+  blue-primary: rgb(0, 139, 209),
+  background-secondary-gradient:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 38%,
+      rgba(226, 242, 254, 1) 100%
+    ),
+);
+
+$landing-hero: url(../images/bg/landing-hero.jpg);
+$show-landing-hero: true;
+$background-opacity: 0.6;
