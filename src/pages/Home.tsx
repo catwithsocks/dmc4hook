@@ -3,6 +3,8 @@ import Navigation from "../components/Navigation";
 import HeroSection from "../components/HeroSection";
 import BenfitSection from "../components/BenefitSection";
 import FeaturesSection from "../components/FeaturesSection";
+import HowToSection from "../components/HowToSection";
+
 
 const Home: React.FC = () => {
   return (
@@ -11,6 +13,7 @@ const Home: React.FC = () => {
       <HeroSection />
       <BenfitSection />
       <FeaturesSection />
+      <HowToSection /> 
     </div>
   );
 };

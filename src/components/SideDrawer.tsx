@@ -23,7 +23,7 @@ const SideDrawer = () => {
               <a href="#benefit-title">Overview</a>
             </li>
             <li>
-              <a href="/">How-To</a>
+              <a href="/">How To</a>
             </li>
             <li>
               <a href="/">Download</a>
