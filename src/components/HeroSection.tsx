@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
           <h2>Enhance your experience</h2>
         </a>
         <p>
-          Most elaborate Trainer for the original release of Devil May Cry 4
+          Most elaborate Trainer for the original version of Devil May Cry 4
         </p>
         <DownloadButton text="Get DMC4Hook" />
       </div>

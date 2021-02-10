@@ -3,20 +3,30 @@
 
 #features-section {
   box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
   max-width: 100%;
   height: auto;
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   h2 {
     letter-spacing: 2px;
     text-transform: uppercase;
+    @include section_title_spacing();
   }
 
   .features-container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+
+    @include responsive_desktop() {
+      flex-direction: row;
+    }
+
+    @include responsive_desktop_large() {
+      flex-direction: row;
+    }
   }
 }

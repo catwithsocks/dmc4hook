@@ -18,12 +18,16 @@ const Navigation: React.FC = () => {
   return (
     <nav className="navbar" id="navbar-main">
       <div className="navigation-container">
-        <ul className="links-to">
+        <ul className="links-to" >
           <li>
-            <FontAwesomeIcon icon={faGithub} />
+            <a href="https://github.com/muhopensores/dmc4_hook" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
           </li>
           <li>
+          <a href="https://twitter.com/SSSiyan" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faTwitter} />
+            </a>
           </li>
         </ul>
       </div>

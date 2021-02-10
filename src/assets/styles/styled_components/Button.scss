@@ -1,0 +1,39 @@
+@import "../imports";
+.standard-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  a {
+    justify-content: center;
+    align-items: center;
+
+    .standard-btn {
+      cursor: pointer;
+      padding: 0.8rem 2rem;
+      outline: color(font);
+      border: none;
+      border-radius: 0.5em;
+      background: color(blue-primary);
+      transition: 0.2s ease-in;
+      width: 100%;
+
+      .standard-btn-content {
+        color: color(font);
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: bold;
+        transition: 0.2s ease-in;
+      }
+      &:hover,
+      &.active {
+        background: color(font);
+        transition: 0.2s ease-in;
+        .standard-btn-content {
+          color: color(blue-primary);
+          transition: 0.2s ease-in;
+        }
+      }
+    }
+  }
+}

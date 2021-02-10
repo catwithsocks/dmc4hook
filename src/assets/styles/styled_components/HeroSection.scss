@@ -24,7 +24,8 @@
         text-align: center;
       }
       h1 {
-        font-size: 2.5rem;
+        font-family: "Titillium Web", sans-serif;
+        font-size: 3rem;
         letter-spacing: 4px;
       }
 
@@ -34,7 +35,7 @@
     }
 
     p {
-      padding-bottom: 2rem;
+      padding: 2rem 1rem;
     }
   }
 
@@ -59,9 +60,9 @@
       margin: auto;
 
       position: relative;
-      bottom: -14.5rem;
+      bottom: -12rem;
       @include responsive_mobile() {
-        bottom: -13rem;
+        bottom: -10rem;
       }
     }
   }

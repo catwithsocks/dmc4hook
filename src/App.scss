@@ -8,6 +8,7 @@
 @import "./assets/styles/styled_components/HeroSection.scss";
 @import "./assets/styles/styled_components/BenefitSection.scss";
 @import "./assets/styles/styled_components/FeaturesSection.scss";
+@import "./assets/styles/styled_components/Button.scss";
 
 * {
   margin: 0;
@@ -18,7 +19,7 @@ html {
   scroll-behavior: smooth;
 
   body {
-    margin: 0;
+    color: color(font);
     position: relative;
   }
 }

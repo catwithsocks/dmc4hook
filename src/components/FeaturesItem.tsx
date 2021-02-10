@@ -1,21 +1,22 @@
 import React from "react";
+import Button from "./Button";
 
-interface Faatures {
+interface Features {
   image: string;
   title: string;
   text: string;
+  btn_text: string;
+  btn_url: string
 }
 
-const FeaturesItem: React.FC<Faatures> = ({ image, title, text }) => {
+const FeaturesItem: React.FC<Features> = ({ title, text, btn_text, btn_url }) => {
   return (
     <div className="features-item-container">
-      <div className="feat-item-img">
-        <img src={image} alt="Feature Item Image" />
-      </div>
       <div className="feat-item-content">
         <h3 className="feat-item-title">{title}</h3>
         <p className="feat-item-text">{text}</p>
       </div>
+        <Button text={btn_text} url={btn_url} />
     </div>
   );
 };

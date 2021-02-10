@@ -23,10 +23,10 @@ const SideDrawer = () => {
               <a href="#benefit-title">Overview</a>
             </li>
             <li>
-              <a href="/">How-To</a>
+              <a href="#help-title">Help</a>
             </li>
             <li>
-              <a href="/">Download</a>
+              <a href="https://github.com/muhopensores/dmc4_hook/releases" target="_blank" rel="noopener noreferrer">Download</a>
             </li>
           </ul>
         </div>

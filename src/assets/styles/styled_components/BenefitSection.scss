@@ -7,8 +7,6 @@
   flex-wrap: wrap;
   max-width: 100%;
   height: auto;
-
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
 
@@ -32,11 +30,11 @@
   }
 
   #benefit-title {
+    @include section_title_spacing();
     display: flex;
-    padding: 1rem;
-    margin: 1rem 0;
     font-size: 1.6em;
     letter-spacing: 1px;
+    text-transform: uppercase;
     justify-content: center;
     align-items: center;
     text-align: center;
