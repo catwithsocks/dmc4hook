@@ -17,9 +17,12 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
+  height: -webkit-fill-available;
 
   body {
     color: color(font);
+    min-height: -webkit-fill-available;
     position: relative;
   }
 }

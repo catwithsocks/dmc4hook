@@ -5,8 +5,8 @@
   display: flex;
   height: 3.5rem;
   position: absolute;
-  mix-blend-mode: difference;
-  filter: invert(5%);
+  /* mix-blend-mode: difference;
+  filter: invert(5%); */
   /*  background: color(nav-bg-primary); */
   /* position: relative; */
   /* display: none; */
@@ -45,7 +45,7 @@
       flex-direction: row;
       list-style-type: none;
       cursor: pointer;
-      color: color(font);
+      color: color(hover_color);
 
       /* display: none;
       visibility: none; */
@@ -64,10 +64,10 @@
 
         a {
           margin: 0;
-          color: color(blue-primary);
+          color: color(font);
           &:hover,
           &.active {
-            color: color(font);
+            color: color(hover_color);
           }
         }
       }

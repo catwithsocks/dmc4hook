@@ -18,16 +18,21 @@
   box-sizing: border-box;
   position: fixed;
   z-index: 200;
-  mix-blend-mode: difference;
-  filter: invert(2%);
+  /* mix-blend-mode: difference;
+  filter: invert(5%); */
+
+  &:hover,
+  &.active {
+    .toggle-button_line {
+      background: color(hover_color);
+    }
+  }
 
   .toggle-button_line {
     width: 30px;
     height: 3px;
     transition: 0.3s ease-in-out;
-    background: color(blue-primary);
-
-    /* box-shadow: 1px 0px 10px 0.5px rgba(0, 0, 0, 0.75); */
+    background: color(font);
 
     &:nth-of-type(2) {
       width: 37px;

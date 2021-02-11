@@ -2,31 +2,68 @@
 @import "./FeaturesItem.scss";
 
 #features-section {
+  @include default_mp();
   box-sizing: border-box;
-  max-width: 100%;
-  height: auto;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
   justify-content: center;
   align-items: center;
 
-  h2 {
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  @include responsive_mobile() {
+    box-sizing: initial;
+    height: 100%;
+  }
+
+  @include responsive_tablet() {
+    box-sizing: initial;
+  }
+
+  @include responsive_tablet_portrait() {
+    flex-direction: column;
+    box-sizing: initial;
+  }
+
+  @include responsive_desktop() {
+    flex-direction: column;
+  }
+
+  @include responsive_desktop_large() {
+    flex-direction: column;
+  }
+
+  #help-title {
     @include section_title_spacing();
+    display: flex;
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .features-container {
-    display: flex;
-    flex-direction: column;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    .row {
+      display: flex;
+      justify-content: space-around;
 
-    @include responsive_desktop() {
-      flex-direction: row;
-    }
+      @include responsive_mobile() {
+        display: block;
+      }
 
-    @include responsive_desktop_large() {
-      flex-direction: row;
+      @include responsive_tablet() {
+        display: block;
+      }
+      .col {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
     }
   }
 }

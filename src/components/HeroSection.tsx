@@ -7,16 +7,16 @@ const HeroSection: React.FC = () => {
     <section id="hero-section">
       <div className="landing">
         <a href="/">
-          <h1>DMC4Hook</h1>
+          <div id="main-image">
+            <img src={site_logo} alt="DMC4Hook Logo" />
+          </div>
+          {/* <h1>DMC4Hook</h1> */}
           <h2>Enhance your experience</h2>
         </a>
         <p>
           Most elaborate Trainer for the original version of Devil May Cry 4
         </p>
         <DownloadButton text="Get DMC4Hook" />
-      </div>
-      <div id="main-image">
-        <img src={site_logo} alt="DMC4Hook Logo" />
       </div>
     </section>
   );

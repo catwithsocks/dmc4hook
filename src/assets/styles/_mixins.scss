@@ -8,6 +8,11 @@
   margin: $top $right $bottom $left;
 }
 
+@mixin default_mp() {
+  margin: 0;
+  padding: 0;
+}
+
 @mixin responsive_mobile {
   @media only screen and (max-width: 767px) {
     @content;
@@ -38,7 +43,7 @@
   }
 }
 
-@mixin page_content {
+/* @mixin page_content {
   padding: 5em 1em;
 
   @include responsive_tablet() {
@@ -53,7 +58,7 @@
   @include responsive_desktop-large() {
     padding: 5em 20em;
   }
-}
+} */
 
 @mixin section_title_spacing() {
   padding: 1rem;

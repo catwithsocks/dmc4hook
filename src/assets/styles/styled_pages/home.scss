@@ -6,9 +6,9 @@
   position: relative;
 
   section {
-    @include page_content;
+    /* @include page_content; */
     height: calc(100vh - 10em);
-    background: color(background);
+    background: #17232b;
 
     &:nth-of-type(1) {
       @include hero_background();
