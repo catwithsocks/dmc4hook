@@ -8,8 +8,10 @@ interface Benefit {
 const BenefitItem: React.FC<Benefit> = ({ title, parag }) => {
   return (
     <div className="benefit-item-container">
-      <h3 className="benefit-item-title">{title}</h3>
-      <p className="benefit-item-text">{parag}</p>
+      <div className="benefit-item-content">
+        <h3 className="benefit-item-title">{title}</h3>
+        <p className="benefit-item-text">{parag}</p>
+      </div>
     </div>
   );
 };

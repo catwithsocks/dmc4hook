@@ -1,39 +1,54 @@
 @import "../imports";
 
 .benefit-item-container {
-  margin: 1rem;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   flex-wrap: wrap;
-  min-width: 30%;
+  min-width: 50%;
 
-  .benefit-item-title {
-    font-size: 1.1rem;
-    padding: 0 1rem;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-  }
+  .benefit-item-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 
-  .benefit-item-text {
-    justify-content: flex-start;
-    padding: 0.4rem 1rem;
-    margin: 0 auto;
-    display: block;
-    max-width: 10rem;
-
-    @include responsive_mobile() {
-      max-width: 100%;
-    }
-    @include responsive_tablet() {
-      margin: 0 5rem;
-    }
-    @include responsive_desktop() {
-      padding: 0.4rem 2rem;
+    .benefit-item-title {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
     }
 
-    @include responsive_desktop_large() {
-      padding: 0.4rem 2rem;
+    .benefit-item-text {
+      /*  justify-content: flex-start;
+      padding: 0.4rem 1rem;
+      margin: 0 auto;
+      display: block; */
+      /* max-width: 10rem; */
+
+      /*  @include responsive_mobile() {
+        max-width: 100%;
+      }
+      @include responsive_tablet() {
+        margin: 0 5rem;
+      }
+      @include responsive_desktop() {
+        padding: 0.4rem 2rem;
+      }
+  
+      @include responsive_desktop_large() {
+        padding: 0.4rem 2rem;
+      } */
+
+      @include responsive_desktop() {
+        padding: 2rem;
+      }
+
+      @include responsive_desktop_large() {
+        padding: 2rem;
+      }
     }
   }
 }

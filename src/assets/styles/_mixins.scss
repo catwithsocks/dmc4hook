@@ -67,17 +67,12 @@
 
 @mixin hero_background {
   @if $show-landing-hero {
-    background: linear-gradient(
-        180deg,
-        rgba(2, 11, 16, 1) 0%,
-        rgba(1, 27, 48, 0.7) 70%
-      ),
-      $landing-hero;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
+    background: $landing-hero;
   }
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
   &:after {
     content: "";
     position: absolute;
@@ -88,4 +83,44 @@
     z-index: 200;
     background: rgba(color(background), $background-opacity);
   }
+}
+
+@mixin background_gradient {
+  background: rgb(13, 46, 79);
+  background: -moz-linear-gradient(
+    340deg,
+    rgba(13, 46, 79, 1) 0%,
+    rgba(41, 154, 222, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    340deg,
+    rgba(13, 46, 79, 1) 0%,
+    rgba(41, 154, 222, 1) 100%
+  );
+  background: linear-gradient(
+    340deg,
+    rgba(13, 46, 79, 1) 0%,
+    rgba(41, 154, 222, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d2e4f",endColorstr="#299ade",GradientType=1);
+}
+
+@mixin background_gradient_dark {
+  background: rgb(11, 11, 25);
+  background: -moz-linear-gradient(
+    340deg,
+    rgba(11, 11, 25, 1) 0%,
+    rgba(0, 45, 69, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    340deg,
+    rgba(11, 11, 25, 1) 0%,
+    rgba(0, 45, 69, 1) 100%
+  );
+  background: linear-gradient(
+    340deg,
+    rgba(11, 11, 25, 1) 0%,
+    rgba(0, 45, 69, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b0b19",endColorstr="#002d45",GradientType=1);
 }

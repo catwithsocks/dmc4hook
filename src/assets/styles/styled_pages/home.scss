@@ -7,8 +7,7 @@
 
   section {
     /* @include page_content; */
-    height: calc(100vh - 10em);
-    background: #17232b;
+    /* height: calc(100vh - 10em); */
 
     &:nth-of-type(1) {
       @include hero_background();

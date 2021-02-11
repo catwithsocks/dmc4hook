@@ -4,7 +4,7 @@ import BenefitItem from "../components/BenefitItem";
 const BenfitSection: React.FC = () => {
   return (
     <section id="benefit-section">
-      <h2 id="benefit-title">Why use 4Hook?</h2>
+      <h2 id="benefit-title">Why use 4Hook ?</h2>
       <div className="benefit-container">
         <div className="row">
           <div className="col">
