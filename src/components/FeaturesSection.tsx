@@ -27,7 +27,7 @@ const FeaturesSection: React.FC = () => {
           <div className="col">
             <FeaturesItem
               title="Trainer in Action"
-              text="Follow the link to find a collection of resources which showcase DMC4Hook in action with all its awesomeness and quirks. If you want to contribute to this collection, please contact us via Twitter, Discord or Github."
+              text="Follow the link to find a collection of resources which showcase DMC4Hook in action with all its features. If you want to contribute to this collection, contact us via Github or Discord."
               btn_text="Test"
               btn_url="https://github.com/muhopensores/dmc4_hook/wiki/Installation-Instructions"
             />
