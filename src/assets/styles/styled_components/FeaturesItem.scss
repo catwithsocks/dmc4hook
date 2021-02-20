@@ -24,21 +24,21 @@
       text-transform: uppercase;
     }
 
-    .feat-item-text {
-      /* justify-content: center;
-      align-items: center; */
-      /* flex-wrap: wrap; */
+    /*  .feat-item-text {
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
 
-      /*   @include responsive_desktop() {
+        @include responsive_desktop() {
         max-width: 100%;
         padding: 0 2rem;
-      } */
+      }
 
-      /*   @include responsive_desktop_large() {
+        @include responsive_desktop_large() {
         max-width: 100%;
         padding: 0 2rem;
-      } */
-    }
+      }
+    } */
 
     @include responsive_desktop() {
       padding: 2rem;

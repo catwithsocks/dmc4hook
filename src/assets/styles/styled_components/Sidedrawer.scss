@@ -49,13 +49,12 @@
           font-size: 1.5rem;
           padding: 0;
           margin: 0;
-          text-shadow: 1px 1px 2px black;
           transition: 0.3s ease-out;
           letter-spacing: 3px;
 
           &:hover,
           &.active {
-            color: color(blue-primary);
+            color: color(hover_color);
             transition: 0.3s ease-out;
           }
         }

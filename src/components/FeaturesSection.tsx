@@ -1,5 +1,5 @@
 import React from "react";
-import image4Hook from "../assets/images/4hook_only.png";
+import install from "../assets/images/4hookinstall.gif";
 import FeaturesItem from "../components/FeaturesItem";
 
 const FeaturesSection: React.FC = () => {
@@ -10,27 +10,24 @@ const FeaturesSection: React.FC = () => {
         <div className="row">
           <div className="col">
             <FeaturesItem
-              image={image4Hook}
               title="Getting Started"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              text="The installation is as simple as drag and dropping a file into your DMC4 folder. For further information or in case of questions, refer to the link down below."
               btn_text="Installation Guide"
               btn_url="https://github.com/muhopensores/dmc4_hook/wiki/Installation-Instructions"
-            />
+            /> 
           </div>
           <div className="col">
             <FeaturesItem
-              image={image4Hook}
               title="Getting Help"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              text="DMC4Hook provides you with context-dependent helpmarkers to help you along with the options. Please refer to the link below, to find an in-depth explanation of all the Trainer's functionalities."
               btn_text="4hook wiki"
               btn_url="https://github.com/muhopensores/dmc4_hook/wiki"
             />
             </div>
           <div className="col">
             <FeaturesItem
-              image={image4Hook}
               title="Trainer in Action"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              text="Follow the link to find a collection of resources which showcase DMC4Hook in action with all its awesomeness and quirks. If you want to contribute to this collection, please contact us via Twitter, Discord or Github."
               btn_text="Test"
               btn_url="https://github.com/muhopensores/dmc4_hook/wiki/Installation-Instructions"
             />

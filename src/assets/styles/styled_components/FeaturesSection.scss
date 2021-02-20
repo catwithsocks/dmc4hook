@@ -15,11 +15,13 @@
   @include responsive_mobile() {
     box-sizing: initial;
     height: 100%;
+    padding: 4rem 0;
   }
 
   @include responsive_tablet() {
     box-sizing: initial;
     height: 100%;
+    padding: 5rem 0;
   }
 
   @include responsive_tablet_portrait() {
@@ -68,6 +70,14 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+
+        @include responsive_desktop() {
+          width: 30rem;
+        }
+
+        @include responsive_desktop_large() {
+          width: 30rem;
+        }
       }
     }
   }

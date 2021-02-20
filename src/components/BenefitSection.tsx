@@ -10,19 +10,19 @@ const BenfitSection: React.FC = () => {
           <div className="col">
             <BenefitItem
               title="Fast"
-              parag="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
+              parag="Quickly get it working in a few minutes. With the one-time setup your settings will be automatically applied on every startup" 
             />
           </div>
           <div className="col">
             <BenefitItem
               title="Extensive"
-              parag="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
+              parag="Various gameplay customization options and plenty of quality of life improvements Various gameplay customization options and plenty of quality of life improvements"
             />
           </div>
           <div className="col">
             <BenefitItem
               title="Simple"
-              parag="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
+              parag="Easy Installation. Simply download and put the dinput8.dll file into your Devil May Cry 4 folder and you are ready to go"
             />
           </div>
         </div>
